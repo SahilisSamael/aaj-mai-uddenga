@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>Ray</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="stylesheetscanlines.css">
+        <link rel="shortcut icon" href="images/icon5.png"/>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex">
+
+        <script src="scanlineToggling.js"></script>
+
+    </head>
+
+
+    <body>
+    <div class="box">
+            <span class="color_me"><h1>BCD adder using IC-7483<span class="blink_me">_</span></h1></span>
+            <p><b>
+            <a href="index.html">Home</a>
+            &nbsp;-&nbsp;
+            <a href="about.html">About</a>
+            &nbsp;-&nbsp;
+            <a href="linux.html">Linux</a>
+            &nbsp;-&nbsp;
+
+            <a href="posts.html">Posts</a>
+            &nbsp;-&nbsp;
+            <a href="links.html">Links</a>
+            &nbsp;
+            </b></p>
+    </div>
+
+           <div class="left">
+            <div class="aesthetic" hide>
+                <div class="border"><titletext>>> mystical-1.jpg</titletext></div>
+                <div class="aestheticimage">
+                    <img src="https://cyuucat.neocities.org/images/mystical-1.jpg" height="800">
+                </div>
+            </div>
+            </div>
+
+
+        <div class="actualstuff" expand>
+            <div class="border">
+            <titletext>10 Sept. 2022</titletext>
+            </div>
+                <p>
+                    It is very unrealistic of me to write anything related of my actual Curriculum; as even though I am a student of <b>Electronics and Telecommunication Engineering</b>, I am very much Interested into <b>Computer Engineering</b>.
+                </p>
+                <p>
+                    But, I can really say, I have have got excellent Faculties at our Institute; one of them being: <b>Prof. Vaishali Jabade</b>. This blog is summary of what she taught us about IC-7483 :)
+                </p>
+        </div>
+
+        <br><br><br><br><br>
+
+
+        <div class="actualstuff" expand>
+            <div class="border">
+            <titletext>BCD Adder</titletext>
+            </div>
+            <p>
+            A BCD adder adds two BCD digits and produces a BCD digit. BCD number cannot be greater than 9. </p>
+            <p>The two given BCD numbers are to be added using the rules of binary addition. </p>
+            <p>If sum is less than or equal to 9 and carry=0carry=0 then correction is necessary. The sum is correct and in the true BCD form. </p>
+            <p>But if sum is invalid BCD or carry=1carry=1, then the result is wrong and needs correction. </p>
+            <p>The wrong result can be corrected by adding six (0110) to it.
+            The 4 bit binary adder IC 7483 can be used to perform addition of BCD numbers. </p>
+            <p>In this, if the four-bit sum output is not a valid digit, or if a carry C3C3 is generated then decimal 6 (0110 binary) is to be added to the sum to get the correct result. </p>
+            <p>Fig1 shows a 1-digit BCD adders can be cascaded to add numbers several digits long by connecting the carry-out of a stage to the carry-in of the next stage. </p>
+            <p>The output of combinational circuit should be 1 if the sum produced by adder 1 is greater than 9 i.e. 1001. The truth table is as follows
+            </p>
+        </div>
+
+        <br><br><br><br><br>
+
+
+        <div class="actualstuff" expand>
+            <p>Truth Table</p><br><br>
+            <img src="https://1.bp.blogspot.com/-4lSnJKX0XB8/XRyHMlS7HlI/AAAAAAAACzo/ByH9NchLWAgQSEJEGnMzv0IL2AumspgqgCLcBGAs/s1600/BCD-TT.png">
+            <br><br>
+            <p>K-Map</p><br><br>
+            <img src="https://i.imgur.com/Y5vmsEu.png">
+            <br><br>
+        </div>
+
+                <br><br><br><br><br>
+
+
+
+        <div class="actualstuff" expand>
+            <div class="border">
+            <titletext>OPERATIONS</titletext>
+            </div>
+            <br>
+                <div class="actualstuff" expand>
+                    <div class="border">
+                    <titletext>Case1: Sum ≤ 9 and carry = 0</titletext>
+                    </div>
+                    <p>The output of combinational circuit Y’ = 0. Hence  B3 B2 B1B0  = 0 0 0 0 for adder-2.</p>
+                    <p>Hence output of adder-2 is same as that of adder-1</p>
+                </div>
+                <div class="actualstuff" expand>
+                    <div class="border">
+                    <titletext> Case2: Sum >9 and carry = 0</titletext>
+                    </div>
+                    <p>If S_3,  S_2,  S_1,  S_0 of adder -1 is greater than 9, then output Y’ of combinational circuits becomes 1.</p>
+                    <p>Therefore B3 B2 B1B0  = 0 1 1 0 (of adder-2).</p>
+                    <p>Hence six (0 1 1 0) will be added to the sum output of adder-1.</p>
+                    <p>We get the corrected BCD result at the output of adder-2.</p>
+                </div>
+                <br>
+        </div>
+
+
+
+                <br><br><br><br><br>
+
+        <div class="actualstuff" expand>
+            <p>4-bit BCD Adder</p><br><br>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/CC.png">
+            <br><br>
+            <p>Pin-Diagram of IC-7483</p><br><br>
+            <img src="https://1.bp.blogspot.com/-H77EW09ehpc/XbmwBmW5QuI/AAAAAAAACTg/gj7qFK2Xzw4RFJUN19VLIfxJY6HnRWnUQCLcBGAsYHQ/s1600/IC%2B7483%2BPin%2BDiagram.png">
+            <br><br>
+        </div>
+
+
+
+
+
+
+        <div class="right">
+        <div class="aesthetic" hide>
+                <div class="border"><titletext>>> mystical-2.jpg</titletext></div>
+                <div class="aestheticimage">
+                    <img src="https://cyuucat.neocities.org/images/mystical-2.jpg" height="800">
+                </div>
+        </div>
+        </div>
+<br><br><br>
+                        <div class="border"><titletext> ~ Sahil Ashok Sawant</titletext></div>
+
+
+</html>
+

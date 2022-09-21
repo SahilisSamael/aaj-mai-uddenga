@@ -1,0 +1,129 @@
+body
+{
+    background-color: #24202b;
+    margin: auto;
+    padding:25px 25px 25px 25px;
+    text-align: center;
+    font-family:'Mono';
+}
+
+
+.box /* top nav box */
+{
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  [hide]{
+        display: none !important;
+  }
+  [expand]{
+      min-width:90% !important;
+      max-width:90% !important;
+  }
+}
+
+.actualstuff /* content */
+{
+    border :#3c3447 solid 3px;
+    padding: 0px;
+    margin: auto;
+    min-height:20%;
+    min-width:60%;
+    max-width:67%;
+}
+
+.aesthetic /* side panels*/
+{
+    border :#3c3447 solid 3px;
+    overflow-x: hidden; /* prevents image spilling out of box */
+    margin-bottom:30px;
+}
+
+
+.right
+{
+    position: absolute;
+    top:171px;
+    right:40px;
+    min-width:12%;
+    max-width:12%;
+}
+
+.left
+{
+    position: absolute;
+    left:40px;
+    min-width: 12%;
+    max-width:12%;
+}
+
+.border /*title*/
+{
+    background-color:#3c3447;
+    margin: 0px;
+    border-color:#3c3447;
+    border-style: solid;
+    border-width:0px;
+    height:26px;
+    text-align:center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+h1 {color:white; font-family:Mono; font-size:50px; margin-top: 10px; margin-bottom: 5px; text-shadow: 2px 2px 7px white;animation; color:white;}
+h2 {font-family:Mono; margin-bottom: 5px; font-size:30px; margin-top: 7px; color:yellow;}
+h3 {font-family:Mono; margin-bottom: 5px; font-size:35px; margin-top: 7px; }
+h4 {font-family:Mono; margin-bottom: 5px; font-size:22px; margin-top: 7px;color:yellowgreen; font-weight:bold;}
+p {font-family:"Mono", "Consolas", "MS PGothic", sans-serif; margin-bottom: 10px; font-size:20px; margin-top: 10px; margin-right:20px;margin-left:20px; color: #ab9bab;}
+summary {font-family:"Mono", "Consolas", "MS PGothic", sans-serif; margin-bottom: 10px; font-size:20px; margin-top: 10px; margin-right:20px;margin-left:20px; color: #cebbce; font-weight:bold}
+b{color:#cebbce}
+titletext{font-family:"Mono", "Consolas", "MS PGothic", sans-serif; margin-bottom: 10px; font-size:20px; margin-top: 10px; margin-right:20px;margin-left:20px; color: #d4d0dc; vertical-align:middle;font-weight: bold; }
+li {font-family:Mono; margin-bottom: 0px; font-size:20px; margin-top: 0px; margin-right:20px;margin-left:20px;}
+ul {list-style-type: none; font-family:"Mono", "Consolas", "MS PGothic", sans-serif; margin-bottom: 10px; font-size:20px; margin-top: 10px; margin-right:20px;margin-left:20px; color: #ab9bab;}
+white {color:white}
+@font-face {font-family: Mono; src: url('ShareTechMono.ttf');}
+a:link{color: #cc61be;   text-decoration: none;}
+a:visited{color: #cc61be;   text-decoration: none;}
+.aestheticimage{object-fit: fill; }
+
+button
+{
+    background-color: transparent;
+    border: #3c3447 solid 3px;
+    margin-top: 20px;
+    padding:4px 20px 4px 20px;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    0% { opacity: 1; }
+    49% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+.emote
+{
+    height:26px;
+    vertical-align:middle;
+    border-radius:4px;
+}
+
+
+hr
+{
+    border: #908290 dotted 1px;
+    margin:20px;
+    border-radius:2px;
+
+}
+

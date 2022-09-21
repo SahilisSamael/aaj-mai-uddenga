@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <title>Ray</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="stylesheetscanlines.css">
+        <link rel="shortcut icon" href="images/icon5.png"/>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex">
+
+        <script src="scanlineToggling.js"></script>
+
+    </head>
+
+
+    <body>
+    <div class="box">
+            <span class="color_me"><h1> Binary Search Algorithm ...<span class="blink_me">_</span></h1></span>
+            <p><b>
+            <a href="index.html">Home</a>
+            &nbsp;-&nbsp;
+            <a href="about.html">About</a>
+            &nbsp;-&nbsp;
+            <a href="linux.html">Linux</a>
+            &nbsp;-&nbsp;
+
+            <a href="posts.html">Posts</a>
+            &nbsp;-&nbsp;
+            <a href="links.html">Links</a>
+            &nbsp;
+            </b></p>
+    </div>
+
+           <div class="left">
+            <div class="aesthetic" hide>
+                <div class="border"><titletext>>> mystical-1.jpg</titletext></div>
+                <div class="aestheticimage">
+                    <img src="https://cyuucat.neocities.org/images/mystical-1.jpg" height="800">
+                </div>
+            </div>
+            </div>
+
+
+        <div class="actualstuff" expand>
+            <div class="border">
+            <titletext>21 Sept. 2022</titletext>
+            </div>
+                <p>
+                    It is very unrealistic of me to write anything related of my actual Curriculum; as even though I am a student of <b>Electronics and Telecommunication Engineering</b>, I am very much Interested into <b>Computer Engineering</b>.
+                </p>
+                <p>
+                    But, I can really say, I have have got excellent Faculties at our Institute; one of them being: <b>Prof. (Dr.) Shripad Bhatlawande</b>. This blog is summary of what he taught us about Sorting Algorithms :)
+                </p>
+        </div>
+
+        <br><br><br><br><br>
+
+
+        <div class="actualstuff" expand>
+            <div class="border">
+            <titletext>Binary Search :</titletext>
+            </div>
+            <p>
+            Most people use the binary search method.It is one of the most popular and effective problem-solving methods available. The location of a particular name may be found using binary search in a maximum of 35 iterations if all names in the world are listed in alphabetical order. Only a collection of sorted elements may be used for binary search. It is necessary to sort a collection before doing binary search on it. The number of iterations may always be decreased when using binary search to conduct actions on a sorted set based on the value that is being searched. Take into account the following array:
+            </p>
+            <img src="https://github.com/SahilisSamael/dddddddddgggggg/blob/main/2.png?raw=true">
+            <p>
+            In the ninth iteration, the position of element 8 will be found using linear search. Let's look at how binary search may be used to minimize the amount of iterations. Before we begin the search, we need to know where the range begins and ends. Let us refer to them as Low and High.
+            </p>
+            <b>
+            <p>LOW = 0</p>
+            <p>HIGH = (n-1)</p>
+            </b>
+            <p>
+            Compare the search value K to the element in the median of the lower and higher boundaries. If the value is bigger, raise the lower bound; otherwise, lower the upper bound.S
+            </p>
+            <img src="https://github.com/SahilisSamael/dddddddddgggggg/blob/main/1.png?raw=true">
+            <p>
+            The lower bound is 0 and the upper bound is 9, as shown in the figure above. (lower bound + upper bound) / 2 = 4 is the median of the lower and higher boundaries. Here a[4] = 4. The value 4>2, which is the one you're looking for. As a result, we don't need to search for any element beyond 4 because the elements beyond it will certainly be higher than 2. As a result, we may always set the array's upper bound to the location of element 4. Now, we repeat the operation with the following values in the same array:
+            </p>
+            <b>
+            <p>LOW = 0</p>
+            <p>HIGH = 3   ...(i.e. n-1)</p>
+            </b>
+
+        </div>
+
+                <br><br><br><br><br>
+
+
+
+
+        <div class="actualstuff" expand>
+            <div class="border">
+            <titletext>Flowchart :</titletext>
+            </div>
+            <p>
+              <img src="https://www.researchgate.net/publication/347486020/figure/fig3/AS:970366100963335@1608364715453/Flowchart-of-the-Binary-search-algorithm.png">
+            </p>
+        </div>
+
+        <br><br><br><br><br>
+
+        <div class="actualstuff" expand>
+            <div class="border">
+            <titletext>Algorithm : </titletext>
+            </div>
+            <p><b>Step I  :</b> Take array a and the key which is to be searched as input from the user.</p>
+            <p><b>Step ii :</b> Initialize one variable i with zero.</p>
+            <p><b>Step iii:</b> Check whether variable i is less than the length of array.</p>
+            <p><b>Step iv:</b> If step[iii] is true then check key is equal to the element at variable i in the array.</p>
+            <p><b>Step v:</b> If step[iv] is true then return variable i which is the index of the key in the  array.</p>
+            <p><b>Step vi:</b> If step[iii] is false then print key is not found in the array.</p>
+
+        </div>
+        <br><br><br><br><br>
+
+
+        <div class="actualstuff" expand>
+            <div class="border">
+            <titletext>Discussion : </titletext>
+            </div>
+            <p>In this code, the user may specify the size of the array and enter values that correspond to the size of the array. When the user inputs the key to be searched in the array, it returns the index of that key in the array, but the key must be present in the array. If key is not present, it returns key not found in the array. I execute the first for loop to take the array's input and the second for loop to search for the key in the array. In this code, I execute two for loops, not nested for loops, thus the time complexity is Big O(n+n), but in general, we take the biggest power of n in the time complexity, therefore the time complexity of this code is Big O(n+n) (n). The complexity of the auxiliary space is O. (1).</p>
+
+        </div>
+        <br><br><br><br><br>
+
+        <div class="actualstuff" expand>
+            <div class="border">
+            <titletext>Conclusion : </titletext>
+            </div>
+            <p>In this assignment, I learned how to take an array as input from a user. To take an array as input from a user, first declare one array and then run any loop, but I ran a for loop from zero to less than the length of the array and took the input for each index from zero to less than the length of the array. I also learned how to traverse an array. I ran another for loop from zero to less than the length of the array to check whether the element at index.</p>
+
+        </div>
+        <br><br><br><br><br>
+
+
+
+
+
+
+
+        <div class="right">
+        <div class="aesthetic" hide>
+                <div class="border"><titletext>>> mystical-2.jpg</titletext></div>
+                <div class="aestheticimage">
+                    <img src="https://cyuucat.neocities.org/images/mystical-2.jpg" height="800">
+                </div>
+        </div>
+        </div>
+<br><br><br>
+                        <div class="border"><titletext> ~ Sahil Ashok Sawant</titletext></div>
+
+
+</html>
+
